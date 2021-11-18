@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "admin panel"
+AuthUserFile D:/OpenServer/domains/localhost/gamedev/admin/.htpasswd
+Require valid-user
+RewriteCond %{REQUEST_METHOD} !POST [NC]
+RewriteRule ^welcome_post.php - [PT]
